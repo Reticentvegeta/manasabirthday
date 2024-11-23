@@ -1,0 +1,215 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+h1, p {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ff1f70;
+}
+
+/* Landing Page */
+.landing-page {
+  position: relative;
+}
+
+.birthday-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Front Page */
+.front-content {
+  margin: 50px auto;
+}
+
+.front-message {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.center-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 100px;
+}
+
+/* Main Page: Reuse styles from earlier */
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/* Tic-Tac-Toe Grid */
+.tic-tac-toe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tic-tac-toe-grid .cell {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+  border: 2px solid white;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+/* Postcard Styling */
+.postcard-container {
+  margin: 20px auto;
+  perspective: 1000px;
+}
+
+.postcard {
+  width: 300px;
+  height: 200px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  margin: auto;
+}
+
+.postcard-front, .postcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.postcard-front {
+  background: #ff4081;
+  color: white;
+  font-size: 18px;
+}
+
+.postcard-back {
+  background: white;
+  color: black;
+  font-size: 16px;
+  transform: rotateY(180deg);
+}
+
+/* Flipped Postcard */
+.postcard.flipped {
+  transform: rotateY(180deg);
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Balloons Animation */
+.balloon-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(45deg, #ff4081, #e91e63);
+  border-radius: 50%;
+  animation: float 8s infinite;
+}
+
+.balloon:nth-child(2) { animation-delay: 2s; }
+.balloon:nth-child(3) { animation-delay: 4s; }
+.balloon:nth-child(4) { animation-delay: 6s; }
+
+@keyframes float {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-120vh) translateX(20px); }
+}
+
+/* Cat Animation */
+.cat-animation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cat {
+  width: 100px;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Cake Animation */
+.cake-animation {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cake, .dog {
+  width: 120px;
+  animation: wiggle 4s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+

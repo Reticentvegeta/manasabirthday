@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    /* Fullscreen background */
+    body, html {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    /* Fixed video size */
+    video {
+      width: 1280px;
+      height: 720px;
+      cursor: pointer; /* Changes cursor to indicate interactivity */
+      border: 5px solid white; /* Optional: Add a border for styling */
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop onclick="window.location.href='front.html'">
+    <source src="assets/birthday_intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
